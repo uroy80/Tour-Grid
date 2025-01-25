@@ -41,4 +41,4 @@ This project is a comprehensive **Tour Management System** developed entirely fr
 ## How to Run  
 1. Clone the repository:  
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/uroy80/Tour-Grid>
