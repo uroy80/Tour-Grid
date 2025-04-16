@@ -45,7 +45,9 @@ This project is a comprehensive **Tour Management System** developed entirely fr
 
 
 
-   ```-- Create database
+```
+
+   -- Create database
 CREATE DATABASE IF NOT EXISTS tourgrid;
 USE tourgrid;
 
@@ -277,10 +279,14 @@ CREATE TABLE IF NOT EXISTS tour_itinerary (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (tour_id) REFERENCES tours(tour_id) ON DELETE CASCADE
-); ```
+);
+
+```
 
 
-```-- Create database
+```
+
+-- Create database
 CREATE DATABASE IF NOT EXISTS tourgrid_normalized;
 USE tourgrid_normalized;
 
@@ -575,4 +581,6 @@ CREATE TABLE IF NOT EXISTS tour_itinerary (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (tour_id) REFERENCES tours(tour_id) ON DELETE CASCADE
-);```
+);
+
+```
